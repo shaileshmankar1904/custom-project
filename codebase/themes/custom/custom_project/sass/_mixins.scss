@@ -1,0 +1,29 @@
+@mixin pagination-link-box($border-color, $border-radius) {
+  border: 2px solid $border-color;
+  border-radius: $border-radius;
+}
+
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src: url($path+".eot");
+    src: url($path+".eot?#iefix") format("embedded-opentype"), url($path+".woff")
+        format("woff"), url($path+".ttf") format("truetype"), url($path+".svg##{$font-name}")
+        format("svg");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@mixin dis-ib {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@mixin for-tablet {
+  @media (min-width: 768px) and (max-width: 1024px) { @content; }
+}
+
+@mixin for-mobile {
+  @media (max-width: 767px) { @content; }
+}

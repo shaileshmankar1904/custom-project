@@ -1,0 +1,12 @@
+.language-paragraph {
+  margin: 10px 0 0;
+  >div {
+    @include dis-ib;
+    &:nth-child(2) {
+      padding: 0 15px;
+      border-right: 1px solid $contentColor;
+      border-left: 1px solid $contentColor;
+      margin: 0 15px;
+    }
+  }
+}

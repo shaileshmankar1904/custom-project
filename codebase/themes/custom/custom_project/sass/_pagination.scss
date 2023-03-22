@@ -1,0 +1,60 @@
+.pager {
+  padding: 20px 0;
+  border-top: 1px solid $listBorderColor;
+  box-shadow: 0px -2px 3px $listBorderColor;
+  .page-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include for-mobile {
+      display: block;
+      text-align: center;
+    }
+  }
+  .pagination-section {
+    a {
+      @include pagination-link-box($linkColor, 4px);
+      padding: 6px 10px;
+      display: inline-block;
+      text-decoration: none;
+      &[rel="prev"] {
+        margin: 0 20px 0 0;
+      }
+      &[rel="next"] {
+        margin: 0 0 0 20px;
+      }
+    }
+    li {
+      display: inline-block;
+    }
+    li,
+    a {
+      font-size: 14px;
+    }
+  }
+  .results-section {
+    @include for-mobile {
+      margin: 25px 0 0;
+    }
+    label {
+      font-size: 14px;
+    }
+    select {
+      @include pagination-link-box($linkColor, 4px);
+      padding: 6px 10px 6px 2px;
+      margin: 0 0 0 20px;
+      color: $linkColor;
+      font-size: 14px;
+    }
+    input {
+      &[type="submit"] {
+        font-family: Roboto-Regular, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        @include pagination-link-box($linkColor, 4px);
+        color: $linkColor;
+        @include for-mobile {
+          margin: 10px 0 0;
+        }
+      }
+    }
+  }
+}

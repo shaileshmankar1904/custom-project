@@ -1,0 +1,34 @@
+@include font-face(Roboto-Regular, "../fonts/Roboto-Regular-webfont", normal, normal);
+
+@include font-face(Roboto-Medium, "../fonts/Roboto-Medium-webfont", normal, normal);
+
+@include font-face(Roboto-Thin, "../fonts/Roboto-Thin-webfont", normal, normal);
+
+body {
+  color: $contentColor;
+  font-family: Roboto-Regular, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  @include for-tablet {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  @include for-mobile {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+a {
+  color: $linkColor;
+  @extend %link-behavior;
+}

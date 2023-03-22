@@ -1,0 +1,6 @@
+name: Publication Module
+type: module
+description: Provides list view for Publication content.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

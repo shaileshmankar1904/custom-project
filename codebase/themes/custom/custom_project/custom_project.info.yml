@@ -1,0 +1,11 @@
+name: Custom Project
+type: theme
+description: 'Theme for Custom Project'
+core_version_requirement: ^8 || ^9
+base theme: false
+libraries:
+  - custom_project/global-styling
+regions:
+  header: Header
+  content: Content
+  footer: Footer

@@ -1,0 +1,11 @@
+$linkColor: #30d5c8;
+$contentColor: #454545;
+$listBackgroundColor: #f1f1f1;
+$listBorderColor: #d3d3d3;
+$headingColor: #0e1111;
+
+%link-behavior {
+  &:hover {
+    text-decoration: none;
+  }
+}
